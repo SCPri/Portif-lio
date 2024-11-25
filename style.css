@@ -9,7 +9,7 @@ body {
     flex-direction: center; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
-    height: 900vh; /* Preenche a altura total da viewport */
+    height: 1000vh; /* Preenche a altura total da viewport */
     margin: 10000; /* Remove a margem padrão */
     padding: 10; /* Remove o padding padrão */
 }
