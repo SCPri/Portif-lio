@@ -5,12 +5,12 @@
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
     background-color: #065b6a; /* Cor de fundo da página */
-    display: center; /* Usa Flexbox para layout */
-    flex-direction: center; /* Alinha os itens na vertical */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
-    height: 930vh; /* Preenche a altura total da viewport */
-    margin: 10000; /* Remove a margem padrão */
+    min-height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
     padding: 10; /* Remove o padding padrão */
 }
 
@@ -108,14 +108,12 @@ p {
 
 /* Estiliza o rodapé da página */
 footer {
-    left: 0;
     background-color: #F5F7F8; /* Cor de fundo do rodapé */
     color: #010611; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
+    padding: 5; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: fixed; /* Posiciona o rodapé */
-    bottom: 0; /* Alinha ao fundo da página */
+    position: relative; /* Posiciona o rodapé */
     font-size: 1rem; /* Tamanho da fonte */
 }
 
