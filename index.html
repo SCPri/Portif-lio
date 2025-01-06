@@ -12,6 +12,7 @@
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#Desenvolvimentos">Em Desenvolvimento</a></li>
                 <li><a href="#projetos">Projetos e Pesquisas</a></li>
                 <li><a href="#trabalho">Trabalho</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -40,6 +41,23 @@
             <img src="imagem_21.jpg" alt="Minha Imagem">
         </div>
     </section>
+
+    <section id="#Desenvolvimentos">
+        <h2>Em Desenvolvimento</h2>
+        <p>A Inteligência Artificial e o desenvolvimento de maneiras mais ágeis de fazer mapeamentos estão cada vez mais ganhando espaço. Aqui, vou mostrar um pouco do que desenvolvi
+           de amostras utilizando linguagem python e o software Qgis, para treinamento de um modelo de Machine Learning. Inicialmente tendo a área de trabalho, baixei imagens Sentinel - 2 (A2)
+           e fiz uma correção atmosférica e composigção RGB no software QGIS, utilizando o plugin SCP. Posteriormente, no mesmo plugin, realizei uma classificação automática chamada Kmeans, onde por variação
+           dos pixels ele agrupa os semelhantes e os classifica. Essa classificação pode ser feita também manualmente e semi automática, tudo depende da finalidade do seu projeto, escala de entregas
+           e demais informações que atendam ao que foi pedido. Aqui utilizei somente 4 classes, isso também varia de acordo com o detalhamento do seu projeto. Feito isso e com a ajuda do Gemini, pesquisei bibliotecas e códigos que pudessem me dar 100000 amostras dessa classificação em pactches
+           de 256x256, para que fique bem treinado e entregue bons resultados. Utilizei o Google Colab para fazê-lo, após subir essa imagem exportada do QGIS numa pasta no meu drive. O Código que utilizei ficará disponível no meu github.
+           Feito isso, as amostras podem ser inseridas no código de treinamento de máquina e rodado. Aqui o Objetivo era de Uso e ocupação do Solo. Não tendo como carregar 100000 amostras para visualização,
+           carreguei essas 30 amostras. E o resultado segue nas imagnes abaixo:
+        </p>
+        <div class="Desenvolvimentos">
+            <img src="Amostras.PNG" alt="Minha Imagem">
+        </div>
+    </section>
+
 
     <section id="projetos">
         <h2>Projetos e Pesquisas</h2>
@@ -80,19 +98,17 @@
         </div>
         <div class="img-tipo-2">
             <h3>Colapso do lago Boeckella, Baía Esperanza: as mudanças nas áreas livres de gelo na Península Antártica</h3>
-            <p>Após as verificações estatísticas, o geoprocessamento neste projeto, contou com as imagens Landsat 7
-                e 8, que, embasaram as considerações da pesquisa, agregando o
-                valor da imagem e percepção visual das modificações temporais da área de estudo. 
-                Com a aquisição das imagens, estas foram pré-processadas no SIG QGIS 10.6, nas
-                etapas de correção atmosférica e composição de bandas, no SCP (Semi-Automatic
-                Classification Plugin).
-                </p>
-            <img src="imagem_15.jpg" alt="Aquisição dos dados das Imagens de Satélite">  
-            <figcaption>Aquisição dos dados das Imagens de Satélite. Fonte: Tabela feita por mim. Site da USGS para aquisição das Imagens.</figcaption>
             <img src="imagem_5.PNG" alt="Mapa de Localização da Área de Estudo">  
             <figcaption>Mapa de Localização da Área de Estudo</figcaption>
             <img src="imagem_12.jpg" alt="Localização, NDWI, Índice Kappa e Vetor do Lago Boeckella">
             <figcaption>Localização, NDWI, Índice Kappa e Vetor do Lago Boeckella</figcaption>
+            <p>Após as verificações estatísticas, o geoprocessamento neste projeto, contou com as imagens Landsat 7
+            e 8, que, embasaram as considerações da pesquisa, agregando o
+            valor da imagem e percepção visual das modificações temporais da área de estudo. 
+            Com a aquisição das imagens, estas foram pré-processadas no SIG QGIS 10.6, nas
+            etapas de correção atmosférica e composição de bandas, no SCP (Semi-Automatic
+            Classification Plugin).
+            </p>
             <p> Após a correção atmosférica, foi calculado o
                 procedimento para geração do NDWI (Índice de Água Normalizada - McFEETERS, 1996),
                 também no software QGIS 10.6. Esta etapa foi realizada através da calculadora raster,
@@ -105,12 +121,6 @@
             <p>Para a validação entre a classificação do NDWI pelo classificador k-means foi
                 realizado o cálculo do índice Kappa e foi baseado na análise visual da composição raster RGB
                 654 (sensor OLI) ou 543 (sensor TM) de cada data. Em breve sairá a publicação da tese.</p>
-                <img src="imagem_18.jpg" alt="Diminuição do Lago Boeckella em comparativo com o Lago Buenos Aires">
-                <figcaption>Diminuição do Lago Boeckella em comparativo com o Lago Buenos Aires. Fonte: Gráfico criado por mim.</figcaption>
-                <p>Como resultado podemos verificar a real diminuição do lago nos anos descritos. Associados aos dados de temperatura do projeto
-                    e demais pesquisas realizadas, a imagem acima mostra a diminuição do Lago Boeckella e possivelmente no futuro, o mesmo ocorrerá com o 
-                    lago Buenos Aires, que já apresenta o mesmo comportamento de expansão pré desaparecimento total.
-                </p>
         </div>
     </section>
 
@@ -126,6 +136,7 @@
                 em produtos cartográficos. Com os dados em mãos utilizando a nuvem de pontos bruta esta é classificada e fica como mostra a figura acima. 
                 Através dela, geram-se curvas de nível, MDT (Modelo Digital de Terreno) e MDS (Modelo Digital de Superfície), que também são entregues e fazem
                 parte da análise a depender de cada objetivo e de cada projeto.
+                Fonte: https://futuriste.com.br/blog/mapeamento-com-drones-guia-completo/pointcloud/.
             </p>
         </div>
 
